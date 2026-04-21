@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUMINA - Premium LMS Platform</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet shadow">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container border-0">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <div class="logo-box"></div>
+                <span class="fw-bold tracking-tight" style="font-size: 20px; color: #4f46e5; letter-spacing: -0.02em;">LUMINA</span>
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+                <div class="d-flex gap-2">
+                    <a href="login.html" class="btn btn-light">Sign In</a>
+                    <a href="signup.html" class="btn btn-primary">Join for Free</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Premium Hero Slider -->
+    <section class="hero-slider-section">
+        <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <!-- Slide 1: Modern Student/Learning -->
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&q=80&w=1920" class="carousel-image" alt="Online Learning Environment" referrerPolicy="no-referrer">
+                    <div class="carousel-overlay"></div>
+                    <div class="carousel-caption container">
+                        <div class="trust-badge">
+                            <div class="green-dot"></div>
+                            <span class="fw-bold tracking-tight text-white" style="font-size: 10px;">SYSTEMATIC MASTERY</span>
+                        </div>
+                        <h1 class="hero-slider-title">Your Gateway to Technical Excellence</h1>
+                        <p class="hero-slider-text">Access thousands of curated professional courses designed by industry leaders. Master the skills that drive modern innovation.</p>
+                        <div class="d-flex gap-3 justify-content-center justify-content-md-start">
+                            <a href="#courses" class="btn btn-primary px-4 py-2" style="background: #ffffff; color: #4f46e5; border: none;">Explore Courses</a>
+                            <a href="about.html" class="btn btn-outline-light px-4 py-2 border-white">How It Works</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2: Professional Collaboration -->
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=1920" class="carousel-image" alt="Collaborative Learning" referrerPolicy="no-referrer">
+                    <div class="carousel-overlay"></div>
+                    <div class="carousel-caption container">
+                        <div class="trust-badge">
+                            <div class="green-dot"></div>
+                            <span class="fw-bold tracking-tight text-white" style="font-size: 10px;">ENTERPRISE READY</span>
+                        </div>
+                        <h1 class="hero-slider-title">Empowering the Next Generation</h1>
+                        <p class="hero-slider-text">Upskill your team with our comprehensive B2B learning platform. Scalable training solutions for growing engineering and design firms.</p>
+                        <div class="d-flex gap-3 justify-content-center justify-content-md-start">
+                            <a href="#courses" class="btn btn-primary px-4 py-2" style="background: #ffffff; color: #4f46e5; border: none;">Lumina for Business</a>
+                            <a href="signup.html" class="btn btn-outline-light px-4 py-2 border-white">Join as Student</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3: Growth/Achievement -->
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&q=80&w=1920" class="carousel-image" alt="Professional Upskilling" referrerPolicy="no-referrer">
+                    <div class="carousel-overlay"></div>
+                    <div class="carousel-caption container">
+                        <div class="trust-badge">
+                            <div class="green-dot"></div>
+                            <span class="fw-bold tracking-tight text-white" style="font-size: 10px;">GLOBAL CERTIFICATION</span>
+                        </div>
+                        <h1 class="hero-slider-title">Expert-Led Personal Mentorship</h1>
+                        <p class="hero-slider-text">Don't just watch videos. Interact with mentors, participate in laboratory sessions, and earn recognized professional credentials.</p>
+                        <div class="d-flex gap-3 justify-content-center justify-content-md-start">
+                            <a href="#courses" class="btn btn-primary px-4 py-2" style="background: #ffffff; color: #4f46e5; border: none;">Start Free Trial</a>
+                            <a href="contact.html" class="btn btn-outline-light px-4 py-2 border-white">Contact Admissions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Modern Ticker Trust Section -->
+    <section class="trust-section">
+        <div class="container">
+            <div class="trust-header">
+                <div class="rating-badge mb-3">
+                    <span style="color: #fbbf24;">★</span>
+                    <span>4.9/5 from 10k+ specialists</span>
+                </div>
+                <h2 class="trust-headline">Trusted by Global Innovation Teams</h2>
+                <p class="trust-subtext">Lumina is the standard for technical mastery at the world's most advanced engineering organizations.</p>
+            </div>
+            
+            <div class="trust-marquee-wrapper">
+                <div class="trust-marquee">
+                    <!-- Original Set -->
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" class="trust-logo" alt="Google" referrerPolicy="no-referrer">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg" class="trust-logo" alt="Microsoft" referrerPolicy="no-referrer">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" class="trust-logo" alt="Amazon" referrerPolicy="no-referrer">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" class="trust-logo" alt="Netflix" referrerPolicy="no-referrer">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_Belo.svg" class="trust-logo" alt="Airbnb" referrerPolicy="no-referrer">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Stripe_Logo%2C_revised_2016.svg" class="trust-logo" alt="Stripe" referrerPolicy="no-referrer">
+                    
+                    <!-- Duplicate Set for Infinity Loop -->
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" class="trust-logo" alt="Google" referrerPolicy="no-referrer">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg" class="trust-logo" alt="Microsoft" referrerPolicy="no-referrer">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" class="trust-logo" alt="Amazon" referrerPolicy="no-referrer">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" class="trust-logo" alt="Netflix" referrerPolicy="no-referrer">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Airbnb_Logo_Belo.svg" class="trust-logo" alt="Airbnb" referrerPolicy="no-referrer">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Stripe_Logo%2C_revised_2016.svg" class="trust-logo" alt="Stripe" referrerPolicy="no-referrer">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Content: The Lumina Methodology -->
+    <section class="py-5 border-bottom bg-white">
+        <div class="container py-lg-4">
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="p-3">
+                        <div class="logo-box mx-auto mb-3" style="width: 32px; height: 32px; opacity: 0.8;"></div>
+                        <h4 style="font-size: 14px;">01 Research</h4>
+                        <p class="text-muted" style="font-size: 12px; max-width: 240px; margin: 0 auto;">Our curriculum is back-tested against current industry hiring requirements to ensure relevance.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3">
+                        <div class="logo-box mx-auto mb-3" style="width: 32px; height: 32px; opacity: 0.6; border-radius: 50%;"></div>
+                        <h4 style="font-size: 14px;">02 Practice</h4>
+                        <p class="text-muted" style="font-size: 12px; max-width: 240px; margin: 0 auto;">Learn by doing. Move from abstract theory to tangible outcomes with guided laboratory sessions.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3">
+                        <div class="logo-box mx-auto mb-3" style="width: 32px; height: 32px; opacity: 0.4; transform: rotate(45deg);"></div>
+                        <h4 style="font-size: 14px;">03 Certify</h4>
+                        <p class="text-muted" style="font-size: 12px; max-width: 240px; margin: 0 auto;">Each completed specialization awards a verified certificate, recognized by our global partner network.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Specializations Slider -->
+    <section id="courses" class="py-5">
+        <div class="container py-lg-5">
+            <div class="section-header position-relative">
+                <div>
+                    <h2 class="section-title">Professional Specializations</h2>
+                    <p class="text-muted mb-0" style="font-size: 13px; max-width: 500px;">Explore our curated selection of industry-aligned learning paths designed for mastery.</p>
+                </div>
+                <div class="slider-nav">
+                    <button id="slidePrev" class="btn-nav" aria-label="Previous">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                    </button>
+                    <button id="slideNext" class="btn-nav" aria-label="Next">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="course-slider-wrapper mt-4">
+                <div class="course-slider" id="mainSlider">
+                    <!-- Course 1 -->
+                    <div class="slider-item">
+                        <div class="course-card d-flex flex-column h-100">
+                            <a href="course-detail.html"><img src="https://picsum.photos/seed/ui-arch/800/600" alt="UI Design" referrerPolicy="no-referrer"></a>
+                            <span class="badge-tag">Design</span>
+                            <h3 class="card-title">Advanced UI Design Architecture</h3>
+                            <div class="flex-grow-1"></div>
+                            <div class="course-meta-row mb-3">
+                                <div class="rating-box">
+                                    <span class="stars-ui">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><defs><linearGradient id="half-star"><stop offset="50%" stop-color="#ffc107"/><stop offset="50%" stop-color="transparent" stop-opacity="1"/></linearGradient></defs><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="url(#half-star)"/></svg>
+                                    </span>
+                                    <span class="rating-num">4.8</span>
+                                </div>
+                                <div class="duration-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    <span>12h 45m</span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="price-tag">RM 380</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course 2 -->
+                    <div class="slider-item">
+                        <div class="course-card d-flex flex-column h-100">
+                            <a href="course-detail.html"><img src="https://picsum.photos/seed/data/800/600" alt="Data Science" referrerPolicy="no-referrer"></a>
+                            <span class="badge-tag">Development</span>
+                            <h3 class="card-title">Data Science Foundations</h3>
+                            <div class="flex-grow-1"></div>
+                            <div class="course-meta-row mb-3">
+                                <div class="rating-box">
+                                    <span class="stars-ui">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    </span>
+                                    <span class="rating-num">4.9</span>
+                                </div>
+                                <div class="duration-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    <span>18h 20m</span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="price-tag">RM 520</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course 3 -->
+                    <div class="slider-item">
+                        <div class="course-card d-flex flex-column h-100">
+                            <a href="course-detail.html"><img src="https://picsum.photos/seed/growth/800/600" alt="Marketing" referrerPolicy="no-referrer"></a>
+                            <span class="badge-tag">Business</span>
+                            <h3 class="card-title">Growth Marketing & Analytics</h3>
+                            <div class="flex-grow-1"></div>
+                            <div class="course-meta-row mb-3">
+                                <div class="rating-box">
+                                    <span class="stars-ui">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#e2e8f0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    </span>
+                                    <span class="rating-num">4.2</span>
+                                </div>
+                                <div class="duration-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    <span>15h 10m</span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="price-tag">RM 320</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course 4 -->
+                    <div class="slider-item">
+                        <div class="course-card d-flex flex-column h-100">
+                            <a href="course-detail.html"><img src="https://picsum.photos/seed/react/800/600" alt="React" referrerPolicy="no-referrer"></a>
+                            <span class="badge-tag">Development</span>
+                            <h3 class="card-title">Advanced React Design Patterns</h3>
+                            <div class="flex-grow-1"></div>
+                            <div class="course-meta-row mb-3">
+                                <div class="rating-box">
+                                    <span class="stars-ui">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    </span>
+                                    <span class="rating-num">4.8</span>
+                                </div>
+                                <div class="duration-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    <span>22h 30m</span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="price-tag">RM 450</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course 5 -->
+                    <div class="slider-item">
+                        <div class="course-card d-flex flex-column h-100">
+                            <a href="course-detail.html"><img src="https://picsum.photos/seed/perf/800/600" alt="Performance" referrerPolicy="no-referrer"></a>
+                            <span class="badge-tag">Development</span>
+                            <h3 class="card-title">Web Performance Engineering</h3>
+                            <div class="flex-grow-1"></div>
+                            <div class="course-meta-row mb-3">
+                                <div class="rating-box">
+                                    <span class="stars-ui">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><defs><linearGradient id="half-star-2"><stop offset="50%" stop-color="#ffc107"/><stop offset="50%" stop-color="transparent" stop-opacity="1"/></linearGradient></defs><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="url(#half-star-2)"/></svg>
+                                    </span>
+                                    <span class="rating-num">4.5</span>
+                                </div>
+                                <div class="duration-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    <span>10h 15m</span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="price-tag">RM 410</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course 6 -->
+                    <div class="slider-item">
+                        <div class="course-card d-flex flex-column h-100">
+                            <a href="course-detail.html"><img src="https://picsum.photos/seed/pm/800/600" alt="Product" referrerPolicy="no-referrer"></a>
+                            <span class="badge-tag">Business</span>
+                            <h3 class="card-title">Product Management Strategy</h3>
+                            <div class="flex-grow-1"></div>
+                            <div class="course-meta-row mb-3">
+                                <div class="rating-box">
+                                    <span class="stars-ui">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    </span>
+                                    <span class="rating-num">4.4</span>
+                                </div>
+                                <div class="duration-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    <span>9h 30m</span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="price-tag">RM 390</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course 7 -->
+                    <div class="slider-item">
+                        <div class="course-card d-flex flex-column h-100">
+                            <a href="course-detail.html"><img src="https://picsum.photos/seed/cloud/800/600" alt="Cloud" referrerPolicy="no-referrer"></a>
+                            <span class="badge-tag">Development</span>
+                            <h3 class="card-title">Cloud Infrastructure (AWS/Azure)</h3>
+                            <div class="flex-grow-1"></div>
+                            <div class="course-meta-row mb-3">
+                                <div class="rating-box">
+                                    <span class="stars-ui">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                    </span>
+                                    <span class="rating-num">4.9</span>
+                                </div>
+                                <div class="duration-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    <span>25h 00m</span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="price-tag">RM 580</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Course 8 -->
+                    <div class="slider-item">
+                        <div class="course-card d-flex flex-column h-100">
+                            <a href="course-detail.html"><img src="https://picsum.photos/seed/security/800/600" alt="Security" referrerPolicy="no-referrer"></a>
+                            <span class="badge-tag">Engineering</span>
+                            <h3 class="card-title">Cyber Security Essentials</h3>
+                            <div class="flex-grow-1"></div>
+                            <div class="course-meta-row mb-3">
+                                <div class="rating-box">
+                                    <span class="stars-ui">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="#ffc107" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#ffc107" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><defs><linearGradient id="half-star-3"><stop offset="50%" stop-color="#ffc107"/><stop offset="50%" stop-color="transparent" stop-opacity="1"/></linearGradient></defs><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="url(#half-star-3)"/></svg>
+                                    </span>
+                                    <span class="rating-num">4.6</span>
+                                </div>
+                                <div class="duration-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="me-1"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    <span>7h 45m</span>
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <span class="price-tag">RM 620</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-outline-primary px-4 py-2" style="font-size: 13px;">View Graduation Paths &rarr;</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Content: Learning Outcomes -->
+    <section class="py-5 bg-white border-top border-bottom">
+        <div class="container py-lg-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5">
+                    <h2 class="section-title mb-4" style="font-size: 24px;">Measurable Learning Outcomes</h2>
+                    <p class="text-muted mb-4">We don't just provide content; we provide results. Our students report a significant increase in their professional capabilities within the first 30 days.</p>
+                    <div class="d-grid gap-3">
+                        <div class="d-flex align-items-center gap-3 p-3 border rounded-3">
+                            <div class="fw-bold text-primary" style="font-size: 20px;">94%</div>
+                            <div class="small fw-500">Student completion rate across all flagship specializations.</div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3 p-3 border rounded-3">
+                            <div class="fw-bold text-primary" style="font-size: 20px;">82%</div>
+                            <div class="small fw-500">Learners reported achieving their career goals within 6 months.</div>
+                        </div>
+                        <div class="d-flex align-items-center gap-3 p-3 border rounded-3">
+                            <div class="fw-bold text-primary" style="font-size: 20px;">4.9</div>
+                            <div class="small fw-500">Average instructor rating based on 10k+ verified reviews.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row g-4">
+                        <div class="col-6">
+                            <div class="card-viz text-center p-4">
+                                <h5 class="mb-2">Structured Path</h5>
+                                <p class="text-muted mb-0" style="font-size: 12px;">Step-by-step guidance avoids the 'tutorial hell'.</p>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card-viz text-center p-4" style="margin-top: 30px;">
+                                <h5 class="mb-2">Expert Network</h5>
+                                <p class="text-muted mb-0" style="font-size: 12px;">Direct access to mentors from top companies.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Content: Help & FAQ Micro-section -->
+    <section class="py-5 bg-light">
+        <div class="container py-lg-4 text-center">
+            <h2 class="section-title mb-4">Questions?</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="accordion accordion-flush text-start border rounded-3 overflow-hidden bg-white" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-600" type="button" data-bs-toggle="collapse" data-bs-target="#f1" style="font-size: 13px;">
+                                    Do I get a certificate after completion?
+                                </button>
+                            </h2>
+                            <div id="f1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted" style="font-size: 12px;">Yes, every specialization path includes a verified digital certificate that you can add to your LinkedIn or professional portfolio.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-600" type="button" data-bs-toggle="collapse" data-bs-target="#f2" style="font-size: 13px;">
+                                    Can I learn at my own pace?
+                                </button>
+                            </h2>
+                            <div id="f2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted" style="font-size: 12px;">Absolutely. Our platform is designed for flexible learning, allowing you to access content and complete labs whenever it fits your schedule.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="mt-4 small text-muted">Still have questions? <a href="contact.html" class="text-primary fw-bold text-decoration-none">Contact Support</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Testimonials Slider -->
+    <section class="py-5 bg-white">
+        <div class="container py-lg-5">
+            <div class="section-header position-relative">
+                <div>
+                    <h2 class="section-title">What Our Students Say</h2>
+                    <p class="text-muted small mb-0">Join 10,000+ specialists mastering their craft with Lumina.</p>
+                </div>
+                <!-- Slider Nav -->
+                <div class="slider-nav">
+                    <button id="testPrev" class="btn-nav" aria-label="Previous">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+                    </button>
+                    <button id="testNext" class="btn-nav" aria-label="Next">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                    </button>
+                </div>
+            </div>
+
+            <div class="course-slider-wrapper">
+                <div class="course-slider" id="testimonialSlider">
+                    <!-- Testimonial 1 -->
+                    <div class="slider-item">
+                        <div class="testimonial-card">
+                            <div class="instructor-meta mb-3">
+                                <div class="avatar avatar-md">
+                                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150&h=150" alt="Student" referrerPolicy="no-referrer">
+                                </div>
+                                <div class="lh-1">
+                                    <h5 class="instructor-name mb-1">Sarah Jenkins</h5>
+                                    <span class="instructor-subtitle">Design Architect</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"The systematic approach at Lumina completely changed how I think about design systems. The depth of architectural knowledge is unmatched."</p>
+                        </div>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="slider-item">
+                        <div class="testimonial-card">
+                            <div class="instructor-meta mb-3">
+                                <div class="avatar avatar-md">
+                                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150&h=150" alt="Student" referrerPolicy="no-referrer">
+                                </div>
+                                <div class="lh-1">
+                                    <h5 class="instructor-name mb-1">Dr. Alex Aris</h5>
+                                    <span class="instructor-subtitle">Senior Data Scientist</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Top-tier content. The laboratory sessions provided real-world experience that I couldn't find in traditional online courses."</p>
+                        </div>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="slider-item">
+                        <div class="testimonial-card">
+                            <div class="instructor-meta mb-3">
+                                <div class="avatar avatar-md">
+                                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150&h=150" alt="Student" referrerPolicy="no-referrer">
+                                </div>
+                                <div class="lh-1">
+                                    <h5 class="instructor-name mb-1">Mark Voland</h5>
+                                    <span class="instructor-subtitle">Engineering Lead</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"Lumina helped our team scale our technical infrastructure with confidence. Highly recommended for senior engineering roles."</p>
+                        </div>
+                    </div>
+                    <!-- Testimonial 4 -->
+                    <div class="slider-item">
+                        <div class="testimonial-card">
+                            <div class="instructor-meta mb-3">
+                                <div class="avatar avatar-md">
+                                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=150&h=150" alt="Student" referrerPolicy="no-referrer">
+                                </div>
+                                <div class="lh-1">
+                                    <h5 class="instructor-name mb-1">Maya Chen</h5>
+                                    <span class="instructor-subtitle">Fullstack Developer</span>
+                                </div>
+                            </div>
+                            <p class="testimonial-text">"The React Design Patterns course was a game-changer. My code is cleaner, more modular, and much easier to maintain."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row g-4">
+                <!-- Column 1: Brand -->
+                <div class="col-lg-4 col-md-12">
+                    <div class="d-flex align-items-center gap-2 mb-3">
+                        <div class="logo-box" style="width: 20px; height: 20px;"></div>
+                        <span class="fw-bold text-dark" style="font-size: 16px; letter-spacing: -0.02em;">LUMINA</span>
+                    </div>
+                    <p class="text-muted small mb-4" style="max-width: 280px; line-height: 1.6;">
+                        Structured paths for master-level engineering and design excellence. Mastering the architectural principles of modern systems.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-muted">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+                        </a>
+                        <a href="#" class="text-muted">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                        </a>
+                        <a href="#" class="text-muted">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Column 2: Navigation -->
+                <div class="col-lg-2 col-6">
+                    <h5 class="footer-column-title">Platform</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="footer-link">Home</a></li>
+                        <li><a href="index.html#courses" class="footer-link">Our Courses</a></li>
+                        <li><a href="about.html" class="footer-link">About Us</a></li>
+                        <li><a href="contact.html" class="footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Support -->
+                <div class="col-lg-2 col-6">
+                    <h5 class="footer-column-title">Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="footer-link">Help Center</a></li>
+                        <li><a href="#" class="footer-link">Terms of Service</a></li>
+                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
+                        <li><a href="#" class="footer-link">Security</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Newsletter -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="footer-column-title">Newsletter</h5>
+                    <p class="text-muted small mb-3">Get the latest technical insights and curricula updates.</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control bg-white border-0 shadow-none py-2 px-3" placeholder="Email" style="font-size: 12px; border-radius: 6px 0 0 6px;">
+                        <button class="btn btn-primary px-3" type="button" style="font-size: 12px; border-radius: 0 6px 6px 0;">Join</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="footer-bottom">
+                <span class="text-muted" style="font-size: 11px;">&copy; 2024 Lumina Learning Systems Inc. All rights reserved.</span>
+                <div class="d-flex gap-3">
+                    <span class="text-muted" style="font-size: 11px;">High-Scale Learning.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery and Bootstrap 5 Bundle -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
