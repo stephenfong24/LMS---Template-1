@@ -16,6 +16,41 @@ $(document).ready(function() {
     $(window).on('scroll', handleScroll);
     handleScroll(); // Initial check
 
+    // Premium Mobile Menu Logic
+    const mobileMenu = $('#mobileMenu');
+    const mobileOverlay = $('#mobileMenuOverlay');
+    const body = $('body');
+    const menuToggle = $('#mobileMenuToggle');
+    const menuClose = $('#menuClose');
+
+    const toggleMenu = (show) => {
+        if (show) {
+            mobileMenu.addClass('active');
+            mobileOverlay.addClass('active');
+            body.addClass('no-scroll');
+            menuToggle.attr('aria-expanded', 'true');
+        } else {
+            mobileMenu.removeClass('active');
+            mobileOverlay.removeClass('active');
+            body.removeClass('no-scroll');
+            menuToggle.attr('aria-expanded', 'false');
+        }
+    };
+
+    menuToggle.on('click', () => toggleMenu(true));
+    menuClose.on('click', () => toggleMenu(false));
+    mobileOverlay.on('click', () => toggleMenu(false));
+
+    // Close on link click
+    $('.mobile-nav-row, .mobile-menu-actions .btn').on('click', () => toggleMenu(false));
+
+    // ESC key to close
+    $(document).on('keydown', (e) => {
+        if (e.key === 'Escape' && mobileMenu.hasClass('active')) {
+            toggleMenu(false);
+        }
+    });
+
     // jQuery: Smooth scroll for internal links
     $('a[href^="#"]').on('click', function(e) {
         const href = $(this).attr('href');

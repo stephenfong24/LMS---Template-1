@@ -14,9 +14,15 @@
                 <div class="logo-box"></div>
                 <span class="fw-bold tracking-tight" style="font-size: 20px; color: var(--primary); letter-spacing: -0.02em;">LUMINA</span>
             </a>
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+            
+            <!-- Mobile Toggler -->
+            <button class="navbar-toggler border-0" type="button" id="mobileMenuToggle" aria-label="Toggle navigation">
+                <span class="toggler-icon-bar"></span>
+                <span class="toggler-icon-bar"></span>
+                <span class="toggler-icon-bar"></span>
             </button>
+
+            <!-- Desktop Menu -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
@@ -31,6 +37,68 @@
             </div>
         </div>
     </nav>
+
+    <!-- Redesigned Premium Mobile Navigation Drawer -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-menu-panel" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <div class="logo-box" style="width: 24px; height: 24px;"></div>
+                <span class="fw-bold fs-5 ms-2 text-white">LUMINA</span>
+            </a>
+            <button class="mobile-menu-close" id="menuClose">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            </button>
+        </div>
+
+        <div class="mobile-menu-content">
+            <!-- Brand Panel -->
+            <div class="mobile-welcome-card">
+                <span class="learner-badge">10k+ learners</span>
+                <h4>Build Future Skills</h4>
+                <p>Industry-ready learning pathways designed for your growth.</p>
+            </div>
+
+            <!-- Navigation List -->
+            <ul class="mobile-nav-list">
+                <li class="mobile-nav-item">
+                    <a href="index.html" class="mobile-nav-row">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                        <span>Home</span>
+                        <svg class="chevron-right" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                    </a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="about.html" class="mobile-nav-row">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
+                        <span>About</span>
+                        <svg class="chevron-right" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                    </a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="courses.html" class="mobile-nav-row active">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"/><path d="M8 7h6"/><path d="M8 11h8"/></svg>
+                        <span>Courses</span>
+                        <svg class="chevron-right" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                    </a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="contact.html" class="mobile-nav-row">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.83 12.83 0 0 0 .62 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.62A2 2 0 0 1 22 16.92z"/></svg>
+                        <span>Contact</span>
+                        <svg class="chevron-right" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Sticky Bottom Actions -->
+        <div class="mobile-menu-actions">
+            <a href="signup.html" class="btn btn-primary w-100">Join for Free</a>
+            <a href="login.html" class="btn btn-mobile-secondary w-100">Sign In</a>
+            <div class="mobile-footer-info">Trusted by future-ready learners</div>
+        </div>
+    </div>
 
     <section class="bg-white py-5 mt-2">
         <div class="container">
