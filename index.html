@@ -15,7 +15,7 @@
         <div class="container border-0">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
                 <div class="logo-box"></div>
-                <span class="fw-bold tracking-tight" style="font-size: 20px; color: #4f46e5; letter-spacing: -0.02em;">LUMINA</span>
+                <span class="fw-bold tracking-tight" style="font-size: 20px; color: var(--primary); letter-spacing: -0.02em;">LUMINA</span>
             </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -56,7 +56,7 @@
                         <h1 class="hero-slider-title">Your Gateway to Technical Excellence</h1>
                         <p class="hero-slider-text">Access thousands of curated professional courses designed by industry leaders. Master the skills that drive modern innovation.</p>
                         <div class="d-flex gap-3 justify-content-center justify-content-md-start">
-                            <a href="#courses" class="btn btn-primary px-4 py-2" style="background: #ffffff; color: #4f46e5; border: none;">Explore Courses</a>
+                            <a href="#courses" class="btn btn-primary px-4 py-2" style="background: #ffffff; color: var(--primary); border: none;">Explore Courses</a>
                             <a href="about.html" class="btn btn-outline-light px-4 py-2 border-white">How It Works</a>
                         </div>
                     </div>
@@ -73,7 +73,7 @@
                         <h1 class="hero-slider-title">Empowering the Next Generation</h1>
                         <p class="hero-slider-text">Upskill your team with our comprehensive B2B learning platform. Scalable training solutions for growing engineering and design firms.</p>
                         <div class="d-flex gap-3 justify-content-center justify-content-md-start">
-                            <a href="#courses" class="btn btn-primary px-4 py-2" style="background: #ffffff; color: #4f46e5; border: none;">Lumina for Business</a>
+                            <a href="#courses" class="btn btn-primary px-4 py-2" style="background: #ffffff; color: var(--primary); border: none;">Lumina for Business</a>
                             <a href="signup.html" class="btn btn-outline-light px-4 py-2 border-white">Join as Student</a>
                         </div>
                     </div>
@@ -90,7 +90,7 @@
                         <h1 class="hero-slider-title">Expert-Led Personal Mentorship</h1>
                         <p class="hero-slider-text">Don't just watch videos. Interact with mentors, participate in laboratory sessions, and earn recognized professional credentials.</p>
                         <div class="d-flex gap-3 justify-content-center justify-content-md-start">
-                            <a href="#courses" class="btn btn-primary px-4 py-2" style="background: #ffffff; color: #4f46e5; border: none;">Start Free Trial</a>
+                            <a href="#courses" class="btn btn-primary px-4 py-2" style="background: #ffffff; color: var(--primary); border: none;">Start Free Trial</a>
                             <a href="contact.html" class="btn btn-outline-light px-4 py-2 border-white">Contact Admissions</a>
                         </div>
                     </div>
@@ -141,29 +141,52 @@
         </div>
     </section>
 
-    <!-- Enhanced Content: The Lumina Methodology -->
-    <section class="py-5 border-bottom bg-white">
-        <div class="container py-lg-4">
-            <div class="row g-4 text-center">
-                <div class="col-md-4">
-                    <div class="p-3">
-                        <div class="logo-box mx-auto mb-3" style="width: 32px; height: 32px; opacity: 0.8;"></div>
-                        <h4 style="font-size: 14px;">01 Research</h4>
-                        <p class="text-muted" style="font-size: 12px; max-width: 240px; margin: 0 auto;">Our curriculum is back-tested against current industry hiring requirements to ensure relevance.</p>
+    <!-- Premium Process Showcase: The Lumina Methodology -->
+    <section class="process-showcase-section border-bottom">
+        <!-- Abstract Background Shapes -->
+        <div class="abstract-shape shape-1"></div>
+        <div class="abstract-shape shape-2"></div>
+        
+        <div class="container position-relative z-2">
+            <div class="process-header text-center reveal">
+                <h2>How Our Learning Model Works</h2>
+                <p>A practical pathway designed to help students gain real-world skills and recognised credentials.</p>
+            </div>
+            
+            <div class="row g-4 process-grid">
+                <!-- Step 01: Research -->
+                <div class="col-lg-4 reveal" style="transition-delay: 100ms;">
+                    <div class="process-card">
+                        <span class="step-label">Step 01</span>
+                        <div class="icon-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                        </div>
+                        <h3>Deep Industry Research</h3>
+                        <p>Our curriculum is back-tested against current industry hiring requirements to ensure maximum relevance and immediate career application.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="p-3">
-                        <div class="logo-box mx-auto mb-3" style="width: 32px; height: 32px; opacity: 0.6; border-radius: 50%;"></div>
-                        <h4 style="font-size: 14px;">02 Practice</h4>
-                        <p class="text-muted" style="font-size: 12px; max-width: 240px; margin: 0 auto;">Learn by doing. Move from abstract theory to tangible outcomes with guided laboratory sessions.</p>
+                
+                <!-- Step 02: Practice -->
+                <div class="col-lg-4 reveal" style="transition-delay: 200ms;">
+                    <div class="process-card">
+                        <span class="step-label">Step 02</span>
+                        <div class="icon-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        </div>
+                        <h3>Hands-on Application</h3>
+                        <p>Learn by doing. Move from abstract theory to tangible outcomes with guided laboratory sessions and real-world project simulations.</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="p-3">
-                        <div class="logo-box mx-auto mb-3" style="width: 32px; height: 32px; opacity: 0.4; transform: rotate(45deg);"></div>
-                        <h4 style="font-size: 14px;">03 Certify</h4>
-                        <p class="text-muted" style="font-size: 12px; max-width: 240px; margin: 0 auto;">Each completed specialization awards a verified certificate, recognized by our global partner network.</p>
+                
+                <!-- Step 03: Certify -->
+                <div class="col-lg-4 reveal" style="transition-delay: 300ms;">
+                    <div class="process-card">
+                        <span class="step-label">Step 03</span>
+                        <div class="icon-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                        </div>
+                        <h3>Professional Certification</h3>
+                        <p>Each completed specialization awards a verified certificate, recognized by our global partner network as a mark of technical mastery.</p>
                     </div>
                 </div>
             </div>
@@ -171,7 +194,7 @@
     </section>
 
     <!-- Professional Specializations Slider -->
-    <section id="courses" class="py-5">
+    <section id="courses" class="py-5 bg-light">
         <div class="container py-lg-5">
             <div class="section-header position-relative">
                 <div>
@@ -424,7 +447,7 @@
     </section>
 
     <!-- Enhanced Content: Learning Outcomes -->
-    <section class="py-5 bg-white border-top border-bottom">
+    <section class="section-emerald bg-white border-top border-bottom">
         <div class="container py-lg-4">
             <div class="row align-items-center g-5">
                 <div class="col-lg-5">
@@ -490,6 +513,36 @@
                             </h2>
                             <div id="f2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body text-muted" style="font-size: 12px;">Absolutely. Our platform is designed for flexible learning, allowing you to access content and complete labs whenever it fits your schedule.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-600" type="button" data-bs-toggle="collapse" data-bs-target="#f3" style="font-size: 13px;">
+                                    Is there a money-back guarantee?
+                                </button>
+                            </h2>
+                            <div id="f3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted" style="font-size: 12px;">Yes, we offer a 30-day money-back guarantee. If you're not satisfied with the course content within the first month, you can request a full refund.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-600" type="button" data-bs-toggle="collapse" data-bs-target="#f4" style="font-size: 13px;">
+                                    Do I have lifetime access to the courses?
+                                </button>
+                            </h2>
+                            <div id="f4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted" style="font-size: 12px;">Once you enroll in a course, you have permanent, lifetime access to all its materials, including any future updates we make to the content.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-600" type="button" data-bs-toggle="collapse" data-bs-target="#f5" style="font-size: 13px;">
+                                    Are there any prerequisites for the courses?
+                                </button>
+                            </h2>
+                            <div id="f5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body text-muted" style="font-size: 12px;">Each course has its own specific prerequisites listed in the description. Generally, we offer courses for all levels, from beginner to advanced.</div>
                             </div>
                         </div>
                     </div>

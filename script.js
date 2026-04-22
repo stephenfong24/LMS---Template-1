@@ -17,8 +17,8 @@ $(document).ready(function() {
 
     // Handle course card hover with jQuery
     $('.course-card').hover(
-        function() { $(this).css('border-color', '#4f46e5'); },
-        function() { $(this).css('border-color', '#e2e8f0'); }
+        function() { $(this).css('border-color', 'var(--primary)'); },
+        function() { $(this).css('border-color', 'var(--border-color)'); }
     );
 
     // Courses Slider Navigation
@@ -177,4 +177,22 @@ $(document).ready(function() {
     if ($('#courseGrid').length) {
         renderCourses(courses);
     }
+
+    // Intersection Observer for Scroll Reveal
+    const revealCallback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('reveal-visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    };
+
+    const revealObserver = new IntersectionObserver(revealCallback, {
+        threshold: 0.1
+    });
+
+    document.querySelectorAll('.reveal').forEach(el => {
+        revealObserver.observe(el);
+    });
 });
