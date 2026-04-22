@@ -1,6 +1,21 @@
 $(document).ready(function() {
     console.log('LUMINA static site loaded');
 
+    // Smart Scroll Header
+    const handleScroll = () => {
+        const hasHero = $('.hero-slider-section, .carousel, .process-showcase-section:first-child').length > 0;
+        const isHomePage = $('body').hasClass('home-page') || window.location.pathname === '/' || window.location.pathname.endsWith('index.html');
+        
+        if ($(window).scrollTop() > 40 || (!hasHero && !isHomePage)) {
+            $('.navbar').addClass('scrolled');
+        } else {
+            $('.navbar').removeClass('scrolled');
+        }
+    };
+
+    $(window).on('scroll', handleScroll);
+    handleScroll(); // Initial check
+
     // jQuery: Smooth scroll for internal links
     $('a[href^="#"]').on('click', function(e) {
         const href = $(this).attr('href');

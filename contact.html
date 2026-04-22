@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg sticky-top">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container border-0">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
                 <div class="logo-box"></div>
@@ -32,184 +32,220 @@
         </div>
     </nav>
 
-    <!-- Contact Hero -->
-    <div class="container py-5 mt-2">
-        <div class="text-center mb-4">
-            <h1 class="hero-title mb-2" style="font-size: 32px;">Get in Touch</h1>
-            <p class="text-muted mx-auto" style="max-width: 480px; font-size: 14px;">Have questions about our curricula or enrollment? Our team is here to provide the architectural guidance you need.</p>
+    <section class="bg-white py-5 mt-2">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h1 class="hero-title mb-2" style="font-size: 32px;">Get in Touch</h1>
+                <p class="text-muted mx-auto" style="max-width: 480px; font-size: 14px;">Have questions about our curricula or enrollment? Our team is here to provide the architectural guidance you need.</p>
+            </div>
+
+            <div class="row g-4 justify-content-center align-items-stretch">
+                <!-- Left Side: Contact Info (High Impact) -->
+                <div class="col-lg-4">
+                    <div class="contact-info-card d-flex flex-column">
+                        <h5 class="mb-3">Contact Information</h5>
+                        <p class="text-muted small mb-4" style="line-height: 1.4;">Prefer a direct conversation? Reach us through any of these specialized channels for immediate architectural assistance.</p>
+
+                        <div class="contact-info-list flex-grow-1">
+                            <div class="contact-info-item">
+                                <div class="contact-icon-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 17a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9.5C2 7 4 5 6.5 5H18c2.2 0 4 1.8 4 4v8Z"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                                </div>
+                                <div class="contact-info-content">
+                                    <h6>Direct Support</h6>
+                                    <p>support@lumina-learning.com</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-icon-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .62 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.62A2 2 0 0 1 22 16.92z"/></svg>
+                                </div>
+                                <div class="contact-info-content">
+                                    <h6>Voice Hotline</h6>
+                                    <p>+60 (3) 1234 5678</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <div class="contact-icon-box">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                                </div>
+                                <div class="contact-info-content">
+                                    <h6>Kuala Lumpur Hub</h6>
+                                    <p>Menara Technovate, Lvl 18</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-social-links">
+                            <a href="#" class="social-circle-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                            </a>
+                            <a href="#" class="social-circle-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
+                            </a>
+                            <a href="#" class="social-circle-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Contact Form -->
+                <div class="col-lg-6">
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label small fw-bold mb-1" style="color: var(--text-main); font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em;">Full Name</label>
+                                    <input type="text" class="form-control" placeholder="John Doe">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label small fw-bold mb-1" style="color: var(--text-main); font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em;">Email Address</label>
+                                    <input type="email" class="form-control" placeholder="john@example.com">
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label small fw-bold mb-1" style="color: var(--text-main); font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em;">Subject</label>
+                                    <select class="form-select border-light bg-light" style="font-size: 13.5px; padding: 10px 14px; border-radius: 8px;">
+                                        <option selected>General Inquiry</option>
+                                        <option>Course Enrollment</option>
+                                        <option>Corporate Training</option>
+                                        <option>Support Request</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label small fw-bold mb-1" style="color: var(--text-main); font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em;">Message</label>
+                                    <textarea class="form-control" rows="4" placeholder="How can we help?"></textarea>
+                                </div>
+                                <div class="col-12 pt-1">
+                                    <button type="submit" class="btn btn-primary w-100 py-2.5 rounded-3" style="font-weight: 600; font-size: 14px;">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="faq-note">
+                            <h6 style="font-size: 13px;">Looking for immediate answers?</h6>
+                            <p style="font-size: 12px;">Check our <a href="#" class="text-primary text-decoration-none fw-medium">Help Center</a> for certificate verification and access codes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Optional Placeholder for Map -->
+            <div class="mt-4 rounded-4 overflow-hidden shadow-sm border border-light" style="height: 240px; background: #fcfcfc; position: relative;">
+                <div class="d-flex align-items-center justify-content-center h-100 text-muted">
+                    <div class="text-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="mb-2 opacity-20"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <p class="small fw-medium mb-0" style="font-size: 12px;">Interactive Map Placeholder</p>
+                        <p style="font-size: 11px;">Menara Technovate, KL Sentral</p>
+                    </div>
+                </div>
+                <!-- Decorative Map Grid -->
+                <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: radial-gradient(#cbd5e1 0.5px, transparent 0.5px); background-size: 16px 16px; opacity: 0.2; pointer-events: none;"></div>
+            </div>
         </div>
+    </section>
 
-        <div class="row g-4 justify-content-center align-items-stretch">
-            <!-- Left Side: Contact Info (High Impact) -->
-            <div class="col-lg-4">
-                <div class="contact-info-card d-flex flex-column">
-                    <h5 class="mb-3">Contact Information</h5>
-                    <p class="text-muted small mb-4" style="line-height: 1.4;">Prefer a direct conversation? Reach us through any of these specialized channels for immediate architectural assistance.</p>
-
-                    <div class="contact-info-list flex-grow-1">
-                        <div class="contact-info-item">
-                            <div class="contact-icon-box">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 17a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9.5C2 7 4 5 6.5 5H18c2.2 0 4 1.8 4 4v8Z"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-                            </div>
-                            <div class="contact-info-content">
-                                <h6>Direct Support</h6>
-                                <p>support@lumina-learning.com</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-info-item">
-                            <div class="contact-icon-box">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.83 12.83 0 0 0 .62 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.62A2 2 0 0 1 22 16.92z"/></svg>
-                            </div>
-                            <div class="contact-info-content">
-                                <h6>Voice Hotline</h6>
-                                <p>+60 (3) 1234 5678</p>
-                            </div>
-                        </div>
-
-                        <div class="contact-info-item">
-                            <div class="contact-icon-box">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-                            </div>
-                            <div class="contact-info-content">
-                                <h6>Kuala Lumpur Hub</h6>
-                                <p>Menara Technovate, Lvl 18</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="contact-social-links">
-                        <a href="#" class="social-circle-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
-                        </a>
-                        <a href="#" class="social-circle-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
-                        </a>
-                        <a href="#" class="social-circle-link">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-                        </a>
+    <!-- Premium Footer Section -->
+    <div class="container overflow-visible">
+        <div class="footer-cta-bar reveal">
+            <div class="row align-items-center">
+                <div class="col-lg-7 mb-4 mb-lg-0">
+                    <h2>Ready to Build Your Future?</h2>
+                    <p>Join industry-ready courses designed to help you grow faster and master modern technology.</p>
+                </div>
+                <div class="col-lg-5 text-lg-end">
+                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-lg-end">
+                        <a href="courses.html" class="btn btn-primary px-4 py-3">Explore Courses</a>
+                        <a href="contact.html" class="btn btn-light px-4 py-3">Contact Admissions</a>
                     </div>
                 </div>
             </div>
-
-            <!-- Right Side: Contact Form -->
-            <div class="col-lg-6">
-                <div class="contact-form-wrapper">
-                    <form class="contact-form">
-                        <div class="row g-3">
-                            <div class="col-md-6">
-                                <label class="form-label small fw-bold mb-1" style="color: var(--text-main); font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em;">Full Name</label>
-                                <input type="text" class="form-control" placeholder="John Doe">
-                            </div>
-                            <div class="col-md-6">
-                                <label class="form-label small fw-bold mb-1" style="color: var(--text-main); font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em;">Email Address</label>
-                                <input type="email" class="form-control" placeholder="john@example.com">
-                            </div>
-                            <div class="col-12">
-                                <label class="form-label small fw-bold mb-1" style="color: var(--text-main); font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em;">Subject</label>
-                                <select class="form-select border-light bg-light" style="font-size: 13.5px; padding: 10px 14px; border-radius: 8px;">
-                                    <option selected>General Inquiry</option>
-                                    <option>Course Enrollment</option>
-                                    <option>Corporate Training</option>
-                                    <option>Support Request</option>
-                                </select>
-                            </div>
-                            <div class="col-12">
-                                <label class="form-label small fw-bold mb-1" style="color: var(--text-main); font-size: 11px; text-transform: uppercase; letter-spacing: 0.05em;">Message</label>
-                                <textarea class="form-control" rows="4" placeholder="How can we help?"></textarea>
-                            </div>
-                            <div class="col-12 pt-1">
-                                <button type="submit" class="btn btn-primary w-100 py-2.5 rounded-3" style="font-weight: 600; font-size: 14px;">Send Message</button>
-                            </div>
-                        </div>
-                    </form>
-
-                    <div class="faq-note">
-                        <h6 style="font-size: 13px;">Looking for immediate answers?</h6>
-                        <p style="font-size: 12px;">Check our <a href="#" class="text-primary text-decoration-none fw-medium">Help Center</a> for certificate verification and access codes.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Optional Placeholder for Map -->
-        <div class="mt-4 rounded-4 overflow-hidden shadow-sm border border-light" style="height: 240px; background: #fcfcfc; position: relative;">
-            <div class="d-flex align-items-center justify-content-center h-100 text-muted">
-                <div class="text-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="mb-2 opacity-20"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-                    <p class="small fw-medium mb-0" style="font-size: 12px;">Interactive Map Placeholder</p>
-                    <p style="font-size: 11px;">Menara Technovate, KL Sentral</p>
-                </div>
-            </div>
-            <!-- Decorative Map Grid -->
-            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: radial-gradient(#cbd5e1 0.5px, transparent 0.5px); background-size: 16px 16px; opacity: 0.2; pointer-events: none;"></div>
         </div>
     </div>
 
-    <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="row g-4">
+            <div class="row g-5">
                 <!-- Column 1: Brand -->
-                <div class="col-lg-4 col-md-12">
-                    <div class="d-flex align-items-center gap-2 mb-3">
-                        <div class="logo-box" style="width: 20px; height: 20px;"></div>
-                        <span class="fw-bold text-dark" style="font-size: 16px; letter-spacing: -0.02em;">LUMINA</span>
-                    </div>
-                    <p class="text-muted small mb-4" style="max-width: 280px; line-height: 1.6;">
-                        Structured paths for master-level engineering and design excellence. Mastering the architectural principles of modern systems.
+                <div class="col-lg-4">
+                    <a class="navbar-brand d-flex align-items-center mb-4" href="index.html">
+                        <div class="logo-box"></div>
+                        <span class="fw-bold text-white" style="font-size: 22px; letter-spacing: -0.02em;">LUMINA</span>
+                    </a>
+                    <p class="footer-desc">
+                        Lumina is a high-scale education ecosystem designed to bridge the gap between abstract theory and industrial mastery through architectural precision.
                     </p>
-                    <div class="d-flex gap-3">
-                        <a href="#" class="text-muted">
+                    <div class="social-links-footer">
+                        <a href="#" class="social-footer-btn">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>
                         </a>
-                        <a href="#" class="text-muted">
+                        <a href="#" class="social-footer-btn">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
                         </a>
-                        <a href="#" class="text-muted">
+                        <a href="#" class="social-footer-btn">
                             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
                         </a>
                     </div>
                 </div>
 
-                <!-- Column 2: Navigation -->
-                <div class="col-lg-2 col-6">
+                <!-- Column 2: Quick Links -->
+                <div class="col-lg-2 col-md-4">
                     <h5 class="footer-column-title">Platform</h5>
                     <ul class="list-unstyled">
                         <li><a href="index.html" class="footer-link">Home</a></li>
-                        <li><a href="index.html#courses" class="footer-link">Our Courses</a></li>
+                        <li><a href="courses.html" class="footer-link">Courses</a></li>
                         <li><a href="about.html" class="footer-link">About Us</a></li>
                         <li><a href="contact.html" class="footer-link">Contact</a></li>
+                        <li><a href="#" class="footer-link">FAQ</a></li>
                     </ul>
                 </div>
 
-                <!-- Column 3: Support -->
-                <div class="col-lg-2 col-6">
-                    <h5 class="footer-column-title">Support</h5>
+                <!-- Column 3: Programs -->
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="footer-column-title">Programs</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="footer-link">Help Center</a></li>
-                        <li><a href="#" class="footer-link">Terms of Service</a></li>
-                        <li><a href="#" class="footer-link">Privacy Policy</a></li>
-                        <li><a href="#" class="footer-link">Security</a></li>
+                        <li><a href="#" class="footer-link">Web Development</a></li>
+                        <li><a href="#" class="footer-link">Data Analytics</a></li>
+                        <li><a href="#" class="footer-link">UI/UX Design</a></li>
+                        <li><a href="#" class="footer-link">Business Skills</a></li>
+                        <li><a href="#" class="footer-link">Certifications</a></li>
                     </ul>
                 </div>
 
-                <!-- Column 4: Newsletter -->
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="footer-column-title">Newsletter</h5>
-                    <p class="text-muted small mb-3">Get the latest technical insights and curricula updates.</p>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control bg-white border-0 shadow-none py-2 px-3" placeholder="Email" style="font-size: 12px; border-radius: 6px 0 0 6px;">
-                        <button class="btn btn-primary px-3" type="button" style="font-size: 12px; border-radius: 0 6px 6px 0;">Join</button>
+                <!-- Column 4: Contact & Newsletter -->
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="footer-column-title">Stay Connected</h5>
+                    <div class="contact-detail">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <span>+60 3 1234 5678</span>
+                    </div>
+                    <div class="contact-detail mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+                        <span>hello@lumina.edu</span>
+                    </div>
+                    
+                    <p class="footer-desc mb-3" style="font-size: 13px;">Subscribe for course updates and tech insights.</p>
+                    <div class="newsletter-box">
+                        <input type="email" placeholder="Your email address">
+                        <button class="newsletter-btn">Join</button>
                     </div>
                 </div>
             </div>
 
-            <!-- Bottom Bar -->
             <div class="footer-bottom">
-                <span class="text-muted" style="font-size: 11px;">&copy; 2024 Lumina Learning Systems Inc. All rights reserved.</span>
-                <div class="d-flex gap-3">
-                    <span class="text-muted" style="font-size: 11px;">High-Scale Learning.</span>
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        <p class="mb-0 bottom-link">© 2026 LUMINA Academy. Built for future-ready learners.</p>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="d-flex justify-content-center justify-content-md-end gap-3">
+                            <a href="#" class="bottom-link">Privacy Policy</a>
+                            <a href="#" class="bottom-link">Terms of Service</a>
+                            <a href="#" class="bottom-link">Sitemap</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
