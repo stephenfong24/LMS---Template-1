@@ -2,15 +2,15 @@
 
 /* Modern Design System - Lumina v2 */
 :root {
-  --primary: #22c55e;
-  --primary-hover: #16a34a;
-  --primary-light: #f0fdf4;
-  --primary-dark: #14532d;
-  --secondary: #34d399; /* Emerald 400 */
-  --accent: #10b981;
+  --primary: #ef4444;
+  --primary-hover: #dc2626;
+  --primary-light: #fff7ed;
+  --primary-dark: #991b1b;
+  --secondary: #f97316;
+  --accent: #fb923c;
   --text-main: #0f172a;
   --text-muted: #64748b;
-  --bg-base: #f7fee7; /* Very light lime/green tint */
+  --bg-base: #fffcfb;
   --bg-card: #ffffff;
   --border-color: #e2e8f0;
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
@@ -21,7 +21,8 @@
   --radius-md: 12px;
   --radius-lg: 20px;
   --transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  --gradient-green: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  --gradient-primary: linear-gradient(135deg, #ef4444 0%, #f97316 100%);
+  --gradient-warm: linear-gradient(135deg, #dc2626 0%, #f97316 100%);
 }
 
 body {
@@ -93,13 +94,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-link:hover {
   opacity: 1;
-  color: var(--primary) !important;
+  color: #fb923c !important;
 }
 
 .nav-link.active {
   opacity: 1;
-  color: var(--primary) !important;
-  background: rgba(34, 197, 94, 0.1);
+  color: #fb923c !important;
+  background: rgba(251, 146, 60, 0.15);
 }
 
 .navbar.scrolled .nav-link {
@@ -109,7 +110,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .navbar.scrolled .nav-link.active,
 .navbar.scrolled .nav-link:hover {
-  color: var(--primary) !important;
+  color: #fb923c !important;
   opacity: 1;
 }
 
@@ -214,7 +215,7 @@ h1, h2, h3, h4, h5, h6 {
   right: -100px;
   width: 250px;
   height: 250px;
-  background: radial-gradient(circle, rgba(34, 197, 94, 0.08) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(239, 68, 68, 0.08) 0%, transparent 70%);
   pointer-events: none;
   z-index: -1;
 }
@@ -312,8 +313,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .learner-badge {
   display: inline-block;
-  background: rgba(34, 197, 94, 0.1);
-  color: #22c55e;
+  background: rgba(249, 115, 22, 0.1);
+  color: #f97316;
   font-size: 9px;
   font-weight: 700;
   padding: 2px 8px;
@@ -389,13 +390,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .mobile-nav-row.active {
-  background: rgba(34, 197, 94, 0.08);
-  border-color: rgba(34, 197, 94, 0.2);
-  color: #22c55e;
+  background: rgba(251, 146, 60, 0.1);
+  border-color: rgba(251, 146, 60, 0.3);
+  color: #fb923c;
 }
 
 .mobile-nav-row.active svg:first-child {
-  color: #22c55e;
+  color: #fb923c;
 }
 
 /* Compact Bottom Actions */
@@ -478,14 +479,14 @@ h1, h2, h3, h4, h5, h6 {
 .btn-primary.btn, 
 button.btn-primary, 
 a.btn-primary {
-  background-color: var(--primary) !important;
-  border-color: var(--primary) !important;
+  background: var(--gradient-primary) !important;
+  border: none !important;
   color: #ffffff !important;
   padding: 0.6rem 1.5rem;
   font-weight: 600;
   border-radius: var(--radius-md);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 14px 0 rgba(34, 197, 94, 0.2);
+  box-shadow: 0 4px 14px 0 rgba(239, 68, 68, 0.3);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -496,10 +497,9 @@ a.btn-primary {
 .btn-primary.btn:hover, 
 button.btn-primary:hover, 
 a.btn-primary:hover {
-  background-color: var(--primary-hover) !important;
-  border-color: var(--primary-hover) !important;
+  background: var(--gradient-warm) !important;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(34, 197, 94, 0.4);
+  box-shadow: 0 6px 20px rgba(239, 68, 68, 0.4);
   color: #ffffff !important;
 }
 
@@ -507,8 +507,9 @@ a.btn-primary:hover {
 .btn-primary:active,
 .btn:focus,
 .form-control:focus {
-  box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.15) !important;
+  box-shadow: 0 0 0 4px rgba(249, 115, 22, 0.15) !important;
   outline: none;
+  border-color: var(--secondary) !important;
 }
 
 .btn-outline-primary,
@@ -773,7 +774,7 @@ a.btn-primary:hover {
   right: -10%;
   width: 300px;
   height: 300px;
-  background: radial-gradient(circle, rgba(34, 197, 94, 0.08) 0%, rgba(34, 197, 94, 0) 70%);
+  background: radial-gradient(circle, rgba(239, 68, 68, 0.08) 0%, rgba(239, 68, 68, 0) 70%);
   z-index: -1;
 }
 
@@ -791,7 +792,7 @@ a.btn-primary:hover {
 }
 
 footer {
-  background: linear-gradient(135deg, #0f172a, #111827, #052e16);
+  background: linear-gradient(135deg, #0f172a, #111827, #450a0a);
   padding: 180px 0 40px;
   color: #ffffff;
   position: relative;
@@ -849,7 +850,7 @@ footer {
   background: var(--primary);
   color: white;
   transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(34, 197, 94, 0.4);
+  box-shadow: 0 8px 20px rgba(239, 68, 68, 0.4);
   border-color: var(--primary);
 }
 
@@ -865,7 +866,7 @@ footer {
 
 .newsletter-box:focus-within {
   border-color: var(--primary);
-  box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.1);
+  box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.1);
 }
 
 .newsletter-box input {
@@ -993,10 +994,10 @@ footer {
 .green-dot {
   width: 8px;
   height: 8px;
-  background: #22c55e;
+  background: #ef4444;
   border-radius: 50%;
   flex-shrink: 0;
-  box-shadow: 0 0 8px rgba(34, 197, 94, 0.6);
+  box-shadow: 0 0 8px rgba(239, 68, 68, 0.6);
 }
 
 .form-control {
@@ -1332,7 +1333,7 @@ footer {
 
 .courses-search-input:focus {
   border-color: var(--primary) !important;
-  box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.05) !important;
+  box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.05) !important;
 }
 
 .search-clear-btn {
@@ -1407,14 +1408,14 @@ footer {
 }
 
 .price-discount {
-  color: #059669;
+  color: #ea580c;
   font-weight: 600;
   font-size: 14px;
 }
 
 .savings-text {
   font-size: 12px;
-  color: #059669;
+  color: #ea580c;
   margin-top: 2px;
   font-weight: 500;
 }
@@ -1494,14 +1495,14 @@ footer {
   background: #fff1f2;
 }
 .contact-info-card {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  background: var(--gradient-primary);
   color: white;
   border-radius: 20px;
   padding: 32px;
   height: 100%;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 20px 40px -12px rgba(34, 197, 94, 0.3);
+  box-shadow: 0 20px 40px -12px rgba(239, 68, 68, 0.3);
 }
 
 .contact-info-card::before {
@@ -1617,7 +1618,7 @@ footer {
 
 .contact-form .form-control:focus {
   border-color: var(--primary);
-  box-shadow: 0 0 0 4px rgba(34, 197, 94, 0.05);
+  box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.05);
 }
 
 .faq-note {
@@ -1693,16 +1694,16 @@ footer {
 .process-card:hover {
   transform: translateY(-12px);
   background: rgba(255, 255, 255, 0.9);
-  box-shadow: 0 30px 60px -15px rgba(34, 197, 94, 0.15);
-  border-color: rgba(34, 197, 94, 0.2);
+  box-shadow: 0 30px 60px -15px rgba(239, 68, 68, 0.15);
+  border-color: rgba(239, 68, 68, 0.2);
 }
 
 .step-label {
   display: inline-block;
   font-size: 11px;
   font-weight: 800;
-  color: #22c55e;
-  background: #f0fdf4;
+  color: #ef4444;
+  background: #fff7ed;
   padding: 5px 12px;
   border-radius: 100px;
   text-transform: uppercase;
@@ -1713,20 +1714,20 @@ footer {
 .icon-badge {
   width: 72px;
   height: 72px;
-  background: linear-gradient(135deg, #22c55e, #10b981);
+  background: var(--gradient-primary);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   margin-bottom: 32px;
-  box-shadow: 0 12px 24px rgba(34, 197, 94, 0.25);
+  box-shadow: 0 12px 24px rgba(239, 68, 68, 0.25);
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 .process-card:hover .icon-badge {
   transform: scale(1.15) rotate(8deg);
-  box-shadow: 0 0 30px rgba(34, 197, 94, 0.45);
+  box-shadow: 0 0 30px rgba(239, 68, 68, 0.45);
 }
 
 .process-card h3 {
@@ -1753,7 +1754,7 @@ footer {
     left: 15%;
     right: 15%;
     height: 1px;
-    background-image: linear-gradient(to right, #22c55e 33%, rgba(255, 255, 255, 0) 0%);
+    background-image: linear-gradient(to right, #ef4444 33%, rgba(255, 255, 255, 0) 0%);
     background-position: top;
     background-size: 14px 1px;
     background-repeat: repeat-x;
@@ -1775,7 +1776,7 @@ footer {
 .shape-1 {
   width: 400px;
   height: 400px;
-  background: #22c55e;
+  background: #f97316;
   top: -100px;
   right: -50px;
 }
@@ -1783,7 +1784,7 @@ footer {
 .shape-2 {
   width: 300px;
   height: 300px;
-  background: #10b981;
+  background: #ef4444;
   bottom: -50px;
   left: -50px;
 }
