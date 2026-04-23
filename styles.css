@@ -10,7 +10,7 @@
   --accent: #fb923c;
   --text-main: #0f172a;
   --text-muted: #64748b;
-  --bg-base: #fffcfb;
+  --bg-base: #ffffff;
   --bg-card: #ffffff;
   --border-color: #e2e8f0;
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
@@ -34,7 +34,7 @@ body {
 }
 
 body:not(.home-page) {
-  padding-top: 80px;
+  padding-top: 64px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -1803,7 +1803,8 @@ footer {
 
 /* Premium Process Showcase Section */
 .process-showcase-section {
-  background: linear-gradient(135deg, #f4fff7, #e8fff1, #f7fffb);
+  /*background: linear-gradient(135deg, #f4fff7, #e8fff1, #f7fffb);*/
+  background: linear-gradient(180deg, #ffffff, #f8fafc, #f1f5f9);
   padding: 100px 0;
   position: relative;
   overflow: hidden;
