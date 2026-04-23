@@ -1433,7 +1433,25 @@ footer {
 }
 
 @media (max-width: 576px) {
-  .slider-item { flex: 0 0 100%; }
+  .course-slider-wrapper {
+    margin: 0;
+    width: 100%;
+  }
+  .course-slider {
+    padding: 10px 20px 30px;
+    scroll-padding: 0 20px;
+    gap: 12px;
+  }
+  .slider-item { 
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    display: flex;
+    justify-content: center;
+  }
+  .course-card {
+    width: 100%; /* Ensure card takes up its container */
+  }
   .slider-nav { top: -50px; }
 }
 
@@ -2101,6 +2119,16 @@ footer {
   animation-delay: 1s;
 }
 
+.feature-courses {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.testimonial {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 /* Mobile Tweaks */
 @media (max-width: 991px) {
   .feature-grid-premium {
@@ -2123,6 +2151,14 @@ footer {
   .metric-card {
     gap: 10px !important;
   }
+ .feature-courses {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  } 
+ .testimonial {
+    padding-top: 5rem;
+    padding-bottom: 3rem;
+  } 
 }
 
 /* Decorative abstract shapes */
