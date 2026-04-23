@@ -703,6 +703,7 @@ a.btn-primary:hover {
   display: flex !important;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
 }
 
 .hero-slider-title {
@@ -1915,6 +1916,196 @@ footer {
     opacity: 0.15;
     z-index: 1;
     transform: translateY(-60px);
+  }
+}
+
+
+/* Outcomes Premium Section Redesign */
+.outcomes-premium-section {
+  padding: 100px 0;
+  background: linear-gradient(180deg, #ffffff, #f8fafc, #f1f5f9);
+  position: relative;
+  overflow: hidden;
+}
+
+.outcomes-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 40px; /* Stronger gutters to prevent full-width feel */
+}
+
+.outcomes-headline {
+  font-size: clamp(32px, 5vw, 44px);
+  font-weight: 800;
+  color: #0f172a;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  letter-spacing: -0.02em;
+}
+
+.outcomes-subtext {
+  font-size: 1.125rem;
+  color: #64748b;
+  max-width: 540px;
+  line-height: 1.6;
+  margin-bottom: 48px;
+}
+
+/* Metric Cards (Left) */
+.metric-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 16px;
+}
+
+.metric-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.1);
+}
+
+.metric-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.metric-number {
+  font-size: 36px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #ef4444, #f97316);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+}
+
+.metric-info {
+  font-size: 14px;
+  color: #334155;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* Feature Grid (Right) */
+.feature-grid-premium {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  position: relative;
+}
+
+.feature-card-premium {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-card-premium::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(to right, #ef4444, #f97316);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.feature-card-premium:hover::before {
+  opacity: 1;
+}
+
+.feature-card-premium:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.12);
+}
+
+.feature-icon-wrapper {
+  width: 48px;
+  height: 48px;
+  background: #fff1f2;
+  color: #ef4444;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.feature-card-premium h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.feature-card-premium p {
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+/* Staggered Layout for Features */
+.feature-card-staggered {
+  margin-top: 40px;
+}
+
+/* Animations */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes float-alt {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(10px); }
+  100% { transform: translateY(0px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float-alt 7s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+/* Mobile Tweaks */
+@media (max-width: 991px) {
+  .feature-grid-premium {
+    grid-template-columns: 1fr;
+  }
+  .feature-card-staggered {
+    margin-top: 0;
+  }
+  .outcomes-premium-section {
+    padding: 60px 0;
+  }
+  .outcomes-headline {
+    text-align: center;
+  }
+  .outcomes-subtext {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
